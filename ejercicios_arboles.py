@@ -58,8 +58,11 @@ def concatenar(prim, sec):
 
 def concatenar_ordenadamente(prim, sec):
     ultimo_prim = prim
-
+    actual_sec = sec
     while ultimo_prim.next != None:
+        while actual_sec.next != None:
+            if actual_sec.numero <= ultimo_prim.numero:
+                
         ultimo_prim = ultimo_prim.next
 
     ultimo_prim.next = sec
